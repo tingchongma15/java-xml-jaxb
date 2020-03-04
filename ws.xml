@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ws>
+<propertytcstore>
+    <propertytcList>
+        <propertytc  name="TCMA" value="1234567"/>
+       <propertytc name="TCMA2" value="12345678" />
+       <propertytc value="12345" name="TC">
+         </propertytc>
+        <propertytc value="12345673333" name="TCMA3"/>
+       <propertytc value="123456784444" name="TCMA4"/>
+    </propertytcList>
+</propertytcstore>
+</ws>
