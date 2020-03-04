@@ -8,7 +8,6 @@ import javax.xml.bind.Unmarshaller;
 
 public class JaxbClient {
 	public Object unmarshaller(File file) {
-		System.out.println("JaxbClient unmarshaller");
 		Object outputObject = new Object();
 		try {
 			JAXBContext jc = JAXBContext.newInstance(Ws.class, Propertytcstore.class, Propertytc.class);

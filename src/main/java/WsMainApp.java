@@ -19,30 +19,30 @@ public class WsMainApp {
 	private static File file1 = new File(PATH_PROPERTYSTORE);
 
 	public static void testUnmarshaller() {
-		System.out.println("WsMainApp testUnmarshaller ws.xml");
-
 		Object object = jaxbClient.unmarshaller(file1);
 		if (object instanceof Ws) {
 			Ws ws = (Ws)object;
 			Propertytcstore propertytcstore = ws.getPropertytcstore();
 			ArrayList<Propertytc> propertytcList = propertytcstore.getPropertytcsList();
-			System.out.println("propertytcstore "
-					);
 			for (Propertytc propertytc : propertytcList) {
+				/*
 				System.out.println("propertytc " 
 						+ propertytc.getName()
 						+ " Name " + propertytc.getName()
 						+ " Value " + propertytc.getValue()
 						);
+						*/
 			}
 		}
 		else
 			if (object instanceof Propertytc) {
 				Propertytc propertytc = (Propertytc)object;
+				/*
 				System.out.println("propertytc "
 						+ propertytc.getName()
 						+ " Value " + propertytc.getValue()
 						);
+						*/
 			}
 	}
 		
